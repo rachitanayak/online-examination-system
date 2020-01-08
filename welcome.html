@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ONLINE EXAMINATION</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body>
+	
+	<header>
+		<div class="main">
+			<div class="logo">
+				<img src="logo5.png">
+			</div>
+			<ul>
+				<li class="active"><a href="#"><i class="fa fa-home" style="font-size:20px; padding-right:5px;"></i>Home</a></li>
+				<li><a href="#" id="adminlog"><i class="fa fa-user" style="font-size:20px; padding-right:5px;"></i>Admin</a></li>
+				<li><a href="#" id="studentlog"><i class="fa fa-graduation-cap" style="font-size:20px; padding-right:5px;"></i>Student</a></li>
+				<li><a href="#" id="about" ><i class="fa fa-user-circle-o"style="font-size:20px; padding-right:5px;" ></i>About Us</a><li>
+			</ul>
+		</div>
+		<div class="title">
+			<h1>ONLINE EXAMINATION</h1>
+		</div>
+		
+	</header>
+	
+	<div class="popup">
+		<div class="popup-content">
+			<img src="close.png" alt="close" class="close">
+			<img src="user.png" alt="admin" class="user">
+			<form action="adminpage.php" method="POST">
+				<input type="text" name="adminid" placeholder="Admin ID" required />
+				<input type="password" name="adminpass" placeholder="Password" required />
+				<button type="submit" class="btn1">Login</button>
+			</form>
+		</div>
+	</div>
+	
+	<div class="popup2">
+		<div class="popup2-content2">
+				<img src="close.png" alt="close" class="close2">
+				<img src="student.png" alt="student" class="user" >
+				<form action="loginstudent.php" method="POST">
+					<input type="text" name="studentid" placeholder="Student ID" required />
+					<input type="password" name="studentpass" placeholder="Password" required />
+					<button type="submit" class="btn1">Login</button>
+				</form>
+		</div>
+	</div>
+	
+	<div class="popup3">
+		<div class="popup3-content3">
+				<img src="close.png" alt="close" class="close3">
+				<img src="rachita.png" alt="Rachita" class="user3">
+				<img src="kir.png" alt="kirthana" class="user4">
+				<span class="s1">Rachita V Nayak <br> 1BI16IS040<br>ISE</span>
+				<span class="s2">M L Kirthana <br> 1BI16IS026<br>ISE</span>
+			
+		</div>
+	</div>
+	
+	<script>
+		
+		document.getElementById("adminlog").addEventListener("click",function(){
+			document.querySelector(".popup").style.display="flex";
+		})
+		
+		document.querySelector(".close").addEventListener("click",function(){
+			document.querySelector(".popup").style.display="none";
+		})
+		
+		document.getElementById("studentlog").addEventListener("click",function(){
+			document.querySelector(".popup2").style.display="flex";
+		})
+		
+		document.querySelector(".close2").addEventListener("click",function(){
+			document.querySelector(".popup2").style.display="none";
+		})
+		
+		document.getElementById("about").addEventListener("click",function(){
+			document.querySelector(".popup3").style.display="flex";
+		})
+		
+		document.querySelector(".close3").addEventListener("click",function(){
+			document.querySelector(".popup3").style.display="none";
+		})
+	
+	</script>
+			
+</body>
+</html>
