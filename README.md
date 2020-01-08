@@ -1,14 +1,13 @@
 # Online Examination System
-The basic functionality achieved by this web application is creating tests by an admin(teacher) and attempting them by students.
-The other features include -<br />
-
-For the admin : <br />
-  -Deleting tests<br />
-  -Viewing details about students<br />
-  -Adding new admins/students to the system<br />
-For the student:<br />
-  -Viewing result immediately after attempting a test<br />
-  -Sending feedback<br />
+The basic functionality achieved by this web application is to create tests by an admin(teacher) and attempt these tests by students.<br />
+The other features include : <br />
+### For the admin: ###
+  1. Deleting tests<br />
+  2. Viewing details about students<br />
+  3. Adding new admins/students to the system<br />
+### For the student: ###
+  1. Viewing result immediately after attempting a test<br />
+  2. Sending feedback<br />
   
 [![welcome](https://user-images.githubusercontent.com/50329040/71994139-412cef80-325e-11ea-8725-ae3b075e91a4.png)](url)<br /><br />
 ![studentlogin](https://user-images.githubusercontent.com/50329040/71994264-70436100-325e-11ea-8456-5ca2a401373c.png)<br /><br />
